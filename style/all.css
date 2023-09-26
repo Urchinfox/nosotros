@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: Arial, Helvetica, "微軟正黑體" sans-serif;
+}
+
+img{
+	vertical-align: bottom;
+}
+
+/* herramientas */
+.container{
+	max-width: 1200px;
+	box-sizing: border-box;
+}
+
+.container-md{
+	max-width: 800px;
+	box-sizing: border-box;
+}
+
+.mx-auto{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* header */
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-foot, .header-btn-xmark{
+	display: none;
+}
+
+.header-head{
+	width: 80px;
+	background-color: yellow;
+}
+
+.header-ul{
+	display: flex;
+	background-color: rgb(0, 0, 0, .7);
+	padding: .5rem 1rem;
+	border-radius: 30px;
+}
+
+.header-li{
+	margin-right: 1rem;
+	margin-right: 1rem;
+}
+
+
+.header-link{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: .9rems;
+	transition-duration: .3s;
+
+}
+
+.header-link:hover{
+	color: lightblue;
+}
+
+.header-img{
+	max-width: 100%;
+	height: auto;
+	/* logo */
+}
+
+.header-body{
+}
+
+.header-head, .header-body, .header-foot{
+	padding: .5rem 1rem;
+	box-sizing: border-box;
+}
+
+/* banner */
+.banner{
+	background-image: linear-gradient(135deg, #cf7688 20%, #f5ba54);
+	color: white;
+}
+
+.banner-container{
+	display: flex;
+	align-items: center;
+}
+.banner-index .banner-head{
+	display: flex;
+	flex-direction: column;
+}
+
+.banner-ul-order1{
+	order: -1;
+}
+
+.banner-title{
+	font-size: 2.2rem;
+	margin-bottom: 2rem;
+}
+
+.banner-small{
+	text-transform: uppercase;
+	font-size: 1rem;
+	margin-top: 1.5rem;
+	display: block;
+}
+
+.banner-subTitle{
+	margin-bottom: 2rem;
+	font-size: 1.75rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, .7);
+}
+
+.banner-desc{
+	line-height: 1.6;
+}
+
+.banner-ul{
+	display: flex;
+	text-transform: uppercase;
+	font-weight: 600;
+	color:rgba(255, 255, 255, .3);
+	margin-bottom: 4rem;
+}
+
+.banner-li + .banner-li{
+	/* 這種寫法 第一個項目不會抓取 */
+	margin-left: 1rem;
+	position: relative;
+}
+
+.banner-li + .banner-li::before{
+	content: "";
+	position: absolute;	
+	top: .4rem;
+	left: -.6rem;
+	width: 4px;
+	height: 4px;
+	background-color: rgba(255, 255, 255, .3);
+	
+}
