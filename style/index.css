@@ -159,3 +159,75 @@
 .base-intro .base-btn:hover{
     background-color: rgba(0,0,0,.5);
 }
+
+/*-------------- build------------------ */
+.base-build .base-body{
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.build-ol{
+    color: rgba(255,255,255,.9);
+}
+
+.build-li{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.build-li + .build-li{
+    margin-top: 2rem;
+}
+
+.build-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.build-desc{
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+.build-content{
+    position: relative;
+    z-index: 1;
+}
+
+.build-li::before, .build-li::after{
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: skew(-15deg);
+    border-radius: 5px;
+}
+
+.build-li::before{
+    left: -40px;
+}
+
+.build-li::after{
+    right: -40px;
+}
+
+.build-li-1,
+.build-li-1::before,
+.build-li-1::after{
+    background-color: #f5ba54;
+}
+
+.build-li-2,
+.build-li-2::before,
+.build-li-2::after{
+    background-color: #eaa666;
+}
+
+.build-li-3,
+.build-li-3::before,
+.build-li-3::after{
+    background-color: #cf7688;
+}
