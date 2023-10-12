@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+.process-item{
+    display: flex;
+}
+
+.process-head{
+    width: 30%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.process-body{
+    width: 70%;
+    background-color: #fff;
+}
+
+.process-cht, .process.en{
+    display: block;
+}
+
+.process.name{
+    color:rgba(255,255,255,.7);
+}
+
+.process-cht{
+    font-size:1.5rem;
+}
+
+.process-en{
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    margin-top: .5rem;
+}
+
+.process-ol{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.process-li{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 2rem;
+}

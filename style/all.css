@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 html{
 	scroll-behavior: smooth;
 }
@@ -82,8 +83,6 @@ img{
 	/* logo */
 }
 
-.header-body{
-}
 
 .header-head, .header-body, .header-foot{
 	padding: .5rem 1rem;

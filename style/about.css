@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* _______________state_________________ */
+.state{
+    background-color: #fff;
+    padding-top: 5rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+.state-head{
+    text-align: center;
+}
+
+.state-body{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.state-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.state-desc{
+    margin-top: 2rem;
+    color:rgba(0,0,0,.7)
+}
+
+.state-img{
+    width: 100%;
+    height: auto;
+}
+
+.state-ul{
+    display: flex;
+    justify-content: center;
+}
+
+.state-li{
+    text-align: center;
+}
+
+.state-li + .state-li{
+    border-left: solid 1px rgba(0,0,0,.1);
+}
+
+.state-li .state-number,
+.state-li .state-unit,
+.state-li .state-term {
+    color: #3eb5f3;
+}
+
+.state-li:nth-child(even) .state-number,
+.state-li:nth-child(even) .state-unit,
+.state-li:nth-child(even) .state-term {
+    color: #33d8ab ;
+}
+
+.state-number, .state-unit, .state-tips, .state-term{
+    display:block ;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.state-number, .state-unit, .state-term{
+    font-weight: 600;
+}
+
+
+.state-number{
+    font-size: 5rem;
+}
+
+.state-unit{
+    font-size: 1.5rem;
+}
+
+.state-term{
+    font-size: 2rem;
+}
+
+.state-tips{
+    color: rgba(0,0,0,.7);
+}
+
+.state-unit,.state-term{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ___________env_____________ */
+
+.env{
+    display: flex;    
+    gap:2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.env-head{
+    width: 33.33333%;
+}
+
+.env-body{
+    width: 66.66666%;
+}
+
+.env-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.env-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.env-desc{
+    margin-top: 1rem;
+    text-align: justify;
+    line-height: 1.5;
+    color: rgba(0,0,0,.7);
+}
+
+
+
+
+
+
+
+
