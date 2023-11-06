@@ -4,12 +4,21 @@
     display: flex;
 }
 
+.process-item:hover .process-head{
+    background-color: #cf7688;
+}
+
+.process-item + .process-item{
+    margin-top: 2rem;
+}
+
 .process-head{
     width: 30%;
     background-color: #ddd;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: .3s;
 }
 
 .process-body{
@@ -38,10 +47,56 @@
 .process-ol{
     display: flex;
     flex-wrap: wrap;
+    list-style-type: decimal;
+    list-style-position: inside;
 }
 
 .process-li{
     width: 50%;
     box-sizing: border-box;
     padding: 2rem;
+}
+
+.process-li:nth-child(n+3){
+    padding-top: 0;
+}
+
+
+.process-title, .process-li::marker{
+    font-size: 1.2rem;
+    color: #cf7688;
+}
+
+.process-title{
+    display: inline-block;
+    font-weight: 600;
+}
+
+.process-desc{
+    color:rgba(0,0,0,.7);
+    line-height: 1.5;
+    margin-top: .5rem;
+}
+
+@media screen and (max-width:480px){
+    .process-item, .process-ol{
+        flex-direction: column;
+    }
+
+    .process-body, .process-head, .process-li{
+        width: auto;
+    }
+
+    .process-head{
+        padding: 1rem;
+    }
+
+    .process-li{
+        padding: 1rem;
+    }
+
+    .process-name{
+        text-align: center;
+    }
+
 }

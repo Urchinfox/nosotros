@@ -106,6 +106,7 @@ img{
 	width: 40%;
 }
 
+
 .banner-head, .banner-body{
 	width: 50%;
 	padding-left: 1rem;
@@ -206,6 +207,7 @@ img{
 .banner-img-mobile{
 	bottom:5rem;
 	left: 0;
+	z-index: 1;
 }
 
 .banner-img-pad{
@@ -305,3 +307,149 @@ img{
 .aside-link-top{
 	font-size: 3rem;
 }
+
+/* ----------------mobile------------------ */
+
+@media screen and (max-width:480px){
+	.header{
+		background-color: rgba(255,255,255,.7);
+	}
+
+	.header-body{
+		display: none;
+	}
+
+	.header-nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0,0,0,.8);
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+
+	.header-ul{
+		border-radius: 0;
+		flex-direction: column;
+		background-color: transparent;
+	}
+
+	.header-foot{
+		display: block;
+	}
+
+	.header-img-logo{
+		opacity: .5;
+	}
+	
+	.header-btn{
+		background-color: transparent;
+		border: none;
+		font-size: 2rem;
+		padding: 0;
+		display: inline-block;
+	}
+
+	.header-btn-xmark{
+		position: absolute;
+		top: .75rem;
+		right: 1.3rem;
+		color: #666;
+	}
+	
+	.header-btn-bars{
+		color: rgba(0,0,0,.5);
+	}
+
+	.header-link{
+		font-size: 2rem;
+		text-align: center;
+		display: block;
+		padding: .7rem 1rem;
+	}
+
+	.banner{
+		clip-path: polygon(0 0,100% 0, 100% 97%,0 100% );
+	}
+
+	.banner-container{
+		flex-direction: column;
+
+	}
+
+	.banner-index .banner-head, .banner-index .banner-body ,
+	.banner-head, .banner-body{
+		width: 100%;
+	}
+
+	.banner-index .banner-head, .banner-head{
+		text-align: center;
+		padding-bottom: 1rem;
+		padding-top: 5rem;
+	}
+
+	.banner-body{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.banner-index .banner-body{
+		padding-top: 1rem;
+	}
+
+	.banner-img-mobile{
+		width: 40vw;
+		bottom: 2.5rem;
+	}
+
+	.banner-img-desktop{
+		width: 70vw;
+		margin-left: 10vw;
+	}
+
+	.banner-img-pad{
+		width: 60vw;
+	}
+
+	.banner-ul{
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
+
+	.banner-title{
+		font-size: 7vw;
+	}
+
+	.banner-title-line::after{
+		left: 50%;
+		margin-left:  -4.4rem ;
+	}
+
+	.banner-small{
+		font-size: 5vw;
+	}
+
+	.aside{
+		display: none;
+	}
+
+	.footer{
+		clip-path:none;
+		padding-top: 1rem;
+	}
+
+	.footer-head{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.footer-body{
+		display: none;
+	}
+}
+

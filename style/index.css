@@ -91,6 +91,7 @@
 .proyecto-item{
     width: 20%;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .proyecto-img{
@@ -231,3 +232,106 @@
 .build-li-3::after{
     background-color: #cf7688;
 }
+
+
+/* -------------animation----------------- */
+
+.ani-fadeIn-leftToRight, .ani-move-downToUp{
+    animation-fill-mode: forwards;
+}
+
+.ani-move-downToUp{
+    animation-name: moveDownToUp;
+    animation-duration: 1s;
+    transform: translateY(120%);
+
+}
+
+.ani-fadeIn-leftToRight{
+    transform: translateX(-100%);
+    animation-name: fadeInLeftToRight;
+    animation-duration: 1s;
+    opacity: 0;
+}
+
+@keyframes fadeInLeftToRight{
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes moveDownToUp{
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+.ani-delay-1{
+    animation-delay: .3s;
+}
+
+.ani-delay-2{
+    animation-delay: .6s;
+}
+
+.ani-delay-3{
+    animation-delay: .9s;
+}
+
+.ani-delay-4{
+    animation-delay: 1s;
+}
+
+.ani-delay-5{
+    animation-delay: 1.2s;
+}
+
+.ani-delay-6{
+    animation-delay: 1.4s;
+}
+
+.ani-delay-7{
+    animation-delay: 1.5s;
+}
+
+/* -----------rwd---------------- */
+
+@media screen and (max-width:480px){
+
+
+    /* service */
+    .service-items{
+        flex-direction: column;
+    }
+
+    .service-item{
+        width: auto;
+    }
+
+    /* proyectos */
+
+    .proyecto-item{
+        width: 33.3333%;
+    }
+
+    /* intro */
+
+    .base-intro{
+        clip-path:polygon(0 0,100% 5%, 100% 95%, 0 100%)
+    }
+
+    .base-intro .base-head, .base-intro .base-btns{
+        text-align: center;
+    }
+
+    /* build */
+    .base-build .base-body{
+        max-width: 55vw;
+    }
+
+}
+
+
